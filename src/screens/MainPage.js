@@ -2,7 +2,7 @@ import React from "react";
 import { createBottomTabNavigator } from "react-navigation";
 import ProductListScreen from "./ProductList";
 import ChatListScreen from "./ChatList";
-import ExhibitListScreen from "./ExhibitList";
+import ExhibitScreen from "./Exhibit";
 import SearchScreen from "./Search";
 import Icon from "react-native-vector-icons/Ionicons";
 
@@ -22,7 +22,7 @@ const Main = createBottomTabNavigator({
     }
   },
   TabItem3: {
-    screen: ExhibitListScreen,
+    screen: ExhibitScreen,
     navigationOptions: {
       tabBarLabel: "出品",
       tabBarIcon: <Icon name="ios-camera" size={30} />
