@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, Button, View, TouchableOpacity } from "react-native";
+import { Button, View, TouchableOpacity } from "react-native";
 import { createStackNavigator } from "react-navigation";
 import Detail from "./Detail";
 import Chat from "./Chat";
