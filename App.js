@@ -1,3 +1,3 @@
-import SidebarScreen from "./src/screens/Sidebar";
+import TabNavScreen from "./src/routes/TabNav";
 
-export default SidebarScreen;
+export default TabNavScreen;

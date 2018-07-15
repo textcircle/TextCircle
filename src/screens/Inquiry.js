@@ -6,11 +6,9 @@ import {
   StyleSheet,
   KeyboardAvoidingView
 } from "react-native";
-import { createStackNavigator } from "react-navigation";
-import HeaderButton from "../components/HeaderButton";
 import DefaultInput from "../components/DefaultInput";
 
-class Inquiry extends React.Component {
+export default class Inquiry extends React.Component {
   state = {
     name: "",
     mail: "",
@@ -62,18 +60,3 @@ const styles = StyleSheet.create({
     marginBottom: 30
   }
 });
-
-export default createStackNavigator(
-  {
-    InquiryScreen: {
-      screen: Inquiry,
-      navigationOptions: ({ navigation }) => ({
-        title: "お問い合わせ",
-        headerLeft: <HeaderButton navigation={navigation} />
-      })
-    }
-  },
-  {
-    initialRouteName: "InquiryScreen"
-  }
-);

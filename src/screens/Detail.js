@@ -6,7 +6,7 @@ class Detail extends React.Component {
     visible: false
   };
   checkAuth = () => {
-    const checkAuth = false;
+    const checkAuth = false; //ここで認証されているかチェックを行う
     if (checkAuth) {
       this.props.navigation.navigate("ChatScreen");
     } else {
