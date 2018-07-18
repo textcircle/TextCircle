@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, View, TouchableOpacity } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
+import firebase from "react-native-firebase";
 
 export default class ProductList extends React.Component {
   constructor(props) {
@@ -10,7 +11,6 @@ export default class ProductList extends React.Component {
   render() {
     return (
       <View>
-        <Icon size={30} name="ios-trash" />
         <Button
           onPress={() => this.props.navigation.navigate("DetailScreen")}
           title="detail"

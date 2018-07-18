@@ -13,89 +13,111 @@ import Inquiry from "../screens/Inquiry";
 export const StackNavProduct = createStackNavigator({
   ProductListScreen: {
     screen: ProductList,
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: () => ({
       title: "商品一覧"
     })
   },
   DetailScreen: {
     screen: Detail,
-    title: "商品詳細"
+    navigationOptions: () => ({
+      title: "商品詳細"
+    })
   },
   ChatScreen: {
     screen: Chat,
-    title: "取引"
-  },
-  MenuScreen: { screen: Menu },
-  MypageScreen: { screen: Mypage },
-  ExhibitListScreen: { screen: ExhibitList },
-  InquiryScreen: { screen: Inquiry }
+    navigationOptions: () => ({
+      title: "取引"
+    })
+  }
 });
 
 export const StackNavChat = createStackNavigator({
   ChatListScreen: {
     screen: ChatList,
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: () => ({
       title: "チャット一覧"
     })
   },
-  ChatScreen: { screen: Chat }
+  ChatScreen: {
+    screen: Chat,
+    navigationOptions: () => ({
+      title: "取引"
+    })
+  }
 });
 
 export const StackNavExhibit = createStackNavigator({
   ExhibitScreen: {
     screen: Exhibit,
-    navigationOptions: ({ navigation }) => ({
-      title: "出品一覧"
+    navigationOptions: () => ({
+      title: "出品"
     })
-  },
-  DetailScreen: {
-    screen: Detail,
-    title: "商品詳細"
-  },
-  ChatScreen: {
-    screen: Chat,
-    title: "取引"
   }
 });
 
 export const StackNavSearch = createStackNavigator({
   SearchScreen: {
     screen: Search,
-    title: "検索"
+    navigationOptions: () => ({
+      title: "検索"
+    })
   },
   ProductListScreen: {
     screen: ProductList,
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: () => ({
       title: "商品一覧"
     })
   },
   DetailScreen: {
     screen: Detail,
-    title: "商品詳細"
+    navigationOptions: () => ({
+      title: "商品詳細"
+    })
   },
   ChatScreen: {
     screen: Chat,
-    title: "取引"
+    navigationOptions: () => ({
+      title: "取引"
+    })
   }
 });
 
 export const StackNavMenu = createStackNavigator({
   MenuScreen: {
     screen: Menu,
-    navigationOptions: ({ navigation }) => ({
+    navigationOptions: () => ({
       title: "メニュー"
+    })
+  },
+  MypageScreen: {
+    screen: Mypage,
+    navigationOptions: () => ({
+      title: "マイページ"
+    })
+  },
+
+  ExhibitListScreen: {
+    screen: ExhibitList,
+    navigationOptions: () => ({
+      title: "出品一覧"
+    })
+  },
+  InquiryScreen: {
+    screen: Inquiry,
+    navigationOptions: () => ({
+      title: "お問い合わせ"
     })
   },
   DetailScreen: {
     screen: Detail,
-    title: "商品詳細"
+    navigationOptions: () => ({
+      title: "商品詳細"
+    })
   },
   ChatScreen: {
     screen: Chat,
-    title: "取引"
-  },
-  MenuScreen: { screen: Menu },
-  MypageScreen: { screen: Mypage },
-  ExhibitListScreen: { screen: ExhibitList },
-  InquiryScreen: { screen: Inquiry }
+    navigationOptions: () => ({
+      title: "取引"
+    })
+  }
 });

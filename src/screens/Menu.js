@@ -8,6 +8,11 @@ const menu = [
     screen: "MypageScreen"
   },
   {
+    key: "exhibitlist",
+    title: "ExhibitList",
+    screen: "ExhibitListScreen"
+  },
+  {
     key: "inquiry",
     title: "Inquiry",
     screen: "InquiryScreen"
@@ -24,7 +29,6 @@ export default class Menu extends React.Component {
     super(props);
   }
   render() {
-    console.log(this.props.navigation);
     return (
       <FlatList
         data={menu}

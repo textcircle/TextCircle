@@ -1,8 +1,15 @@
 import React from "react";
-import { Text } from "react-native";
+import { View, Button } from "react-native";
 
 export default class ProductList extends React.Component {
   render() {
-    return <Text>test</Text>;
+    return (
+      <View>
+        <Button
+          onPress={() => this.props.navigation.navigate("ChatScreen")}
+          title="chat"
+        />
+      </View>
+    );
   }
 }
